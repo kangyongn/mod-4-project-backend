@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  note: MyString
+  img: MyString
+  sender_id: 1
+  receiver_id: 1
+  date: 2019-04-14
+
+two:
+  note: MyString
+  img: MyString
+  sender_id: 1
+  receiver_id: 1
+  date: 2019-04-14
