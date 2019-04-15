@@ -36,7 +36,7 @@ class Api::V1::GiftsController < ApplicationController
   private
 
   def gift_params
-    params.permit(:note, :img, :sender_id, :user_id, :date)
+    params.permit(:note, :img, :sender_id, :user_id, :date, :song)
   end
 
   def get_gift
