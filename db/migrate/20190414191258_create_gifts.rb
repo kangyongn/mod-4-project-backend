@@ -3,7 +3,7 @@ class CreateGifts < ActiveRecord::Migration[5.2]
     create_table :gifts do |t|
       t.string :note
       t.string :img
-      t.integer :sender_id
+      t.string :sender_id
       t.integer :user_id
       t.date :date
 
