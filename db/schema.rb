@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2019_04_14_191258) do
     t.string "note"
     t.string "img"
     t.integer "sender_id"
-    t.integer "receiver_id"
+    t.integer "user_id"
     t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

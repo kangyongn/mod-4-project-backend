@@ -4,7 +4,7 @@ class CreateGifts < ActiveRecord::Migration[5.2]
       t.string :note
       t.string :img
       t.integer :sender_id
-      t.integer :receiver_id
+      t.integer :user_id
       t.date :date
 
       t.timestamps
