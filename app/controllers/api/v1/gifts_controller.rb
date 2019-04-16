@@ -12,6 +12,7 @@ class Api::V1::GiftsController < ApplicationController
 
   def create
     @gift = Gift.new(gift_params)
+    @gift.image.attach(gift_params[:image])
     if @gift.save
       render json: @gift, status: :created
     else
@@ -36,7 +37,7 @@ class Api::V1::GiftsController < ApplicationController
   private
 
   def gift_params
-    params.permit(:note, :img, :sender_id, :user_id, :date, :song)
+    params.permit(:note, :img, :sender_id, :user_id, :date, :song, :image)
   end
 
   def get_gift
