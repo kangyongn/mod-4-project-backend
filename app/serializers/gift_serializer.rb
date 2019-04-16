@@ -1,7 +1,7 @@
 class GiftSerializer < ActiveModel::Serializer
   include Rails.application.routes.url_helpers
-  
-  attributes :id, :note, :img, :sender_id, :user_id, :date, :song, :image
+
+  attributes :id, :note, :sender_id, :user_id, :date, :song, :image
 
   belongs_to :user
 
